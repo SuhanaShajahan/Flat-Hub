@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,70 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Login Form with Show Password</title>
+    <title>Villa Agency TemplateMo - Contact Page</title>
     <style>
-    body {
-        background-color: #f35525;
-        font-family: Arial, sans-serif;
-    }
-    
-    .container {
-        width: 300px;
-        margin: 0 auto;
-    }
-    
-    form {
-        width: 600px;
+        /* Add some basic styling for better presentation */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
         border: 2px solid #cccccc;
         padding: 60px;
         border-radius: 5px;
         font-size: 20px;
         background-color: #6d6b6b;
     }
-    
-    input[type="text"],
-    input[type="password"] {
-        width: 60%;
-        padding: 5px;
-        margin: 5px 0 20px 0;
-        border: 3px solid #e20000;
-        border-radius: 5px;
-        box-sizing: border-box;
-        font:white;
-    }
-    
-    button {
-        background-color: #030403;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 35%;
-    }
-    
-    button:hover {
-        background-color: #061507;
-    }
-    
-    .show-password {
-        margin-top: 10px;
-        cursor: pointer;
-        color: blue;
-    }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
     </style>
-    <script>
-    // function showPassword() {
-    //     var passwordField = document.getElementById("password");
-    //     if (passwordField.type === "password") {
-    //         passwordField.type = "text";
-    //     } else {
-    //         passwordField.type = "password";
-    //     }
     
-    </script>
-  
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -139,11 +112,9 @@ https://templatemo.com/tm-591-villa-agency
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="appartment.html">Appartment</a></li>
-                      <!-- <li><a href="property-details.html">Property Details</a></li> -->
-                      <li><a href="login.html"></i> Login</a></li>
-                      <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="appartment.html" class="active">Appartments</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -155,40 +126,35 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
-
-  <div class="page-heading header-text">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <!-- <span class="breadcrumb"><a href="#">Home</a>  /  Contact Us</span> -->
-          <h3>LogIn</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-
- 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-<center>
+<br>
+</div>
 <div class="container">
-  <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required="">
-      <br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required="">
-      
-      <button type="submit">Login</button>
- 
-</div></center>
+<form action="regact.php" method="POST">>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required>
 
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
 
+    <label for="email">Email </label>
+    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com$">
+  
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
 
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, and one lowercase letter, and at least 8 or more characters" required>
+
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+
+    <input type="submit" value="Register">
+    <p>Already have an account? <a href="login.html">Log In</a></p>
+</form>
+</div>  
   <footer>
     <div class="container">
       <div class="col-lg-12">
