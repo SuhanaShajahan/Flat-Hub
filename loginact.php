@@ -5,7 +5,7 @@ include("config.php");
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $password = $_POST['pwd'];
-    $sql = "SELECT * FROM `register` WHERE `email` = '$email' AND `password` = '$password'";
+    $sql = "SELECT * FROM `tbl_register` WHERE `email` = '$email' AND `password` = '$password'";
 
     if ($res = mysqli_query($con, $sql)) {
         $num = mysqli_num_rows($res);

@@ -2,16 +2,16 @@
 include("config.php");
 if(isset($_POST['submit']))
 {
-$firstname=$_POST['firstname'];
-$lastname=$_POST['lastname'];
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
 $email=$_POST['email'];
 $address=$_POST['address'];
-$phonenumber=$_POST['phonenumber'];
+$phone=$_POST['phone'];
 $password=$_POST['password'];
-$confirmpassword=$_POST['confirmpassword'];
+$confirm_password=$_POST['confirm_password'];
 
 
-$sql="INSERT INTO `register`(`firstname`,`lastname`,`email`,`address`,`phonenumber`,`password`,`confirmpassword`)VALUES('$firstname','$lastname','$email','$address','$phonenumber','$password','$confirmpassword')";
+$sql="INSERT INTO `tbl_register`(`fname`,`lname`,`email`,`address`,`phone`,`password`)VALUES('$fname','$lname','$email','$address','$phone','$password')";
 if(mysqli_query($con,$sql))
 {
     header("location:login.php");
