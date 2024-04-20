@@ -129,7 +129,7 @@ https://templatemo.com/tm-591-villa-agency
 <br>
 </div>
 <div class="container">
-<form action="regact.php" method="POST">>
+<form action="regact.php" method="POST">
     <label for="fname">First Name:</label>
     <input type="text" id="fname" name="fname" required>
 
@@ -143,22 +143,22 @@ https://templatemo.com/tm-591-villa-agency
     <input type="text" id="address" name="address" required>
 
     <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+    <input type="text" class="form-control" id="subject" name="phone" pattern="[0-9]{10}" title="Enter 10 Digits" required>
 
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, and one lowercase letter, and at least 8 or more characters" required>
+    <input type="password" id="password" name="password"  required>
 
     <label for="confirm_password">Confirm Password:</label>
     <input type="password" id="confirm_password" name="confirm_password" required>
 
-    <input type="submit" value="Register">
+    <input type="submit" value="Register" name="submit">
     <p>Already have an account? <a href="login.html">Log In</a></p>
 </form>
 </div>  
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. 
+        <!-- <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved.  -->
         
         <a rel="nofollow" href="https://templatemo.com" target="_blank"></a> : <a href="https://themewagon.com"></a></p>
       </div>
