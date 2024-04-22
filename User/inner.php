@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
+ 
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +15,32 @@
         .container {
             background: linear-gradient(to top left, black 0%, #f35525 100%);
             display: flex;
-            min-height: 100vh;
+            min-height: 0vh;
+        }
+
+        .nav1{
+            background-color: orangered;
+            color: #fff;
+       font-family: calibri;
+       padding-right: 15px;
+       padding-left: 15px;
+        }
+        .nav1div
+        {
+            display: flex;
+            align-items: left;
+            justify-content: right;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+        li a{
+color: black;
+font-size: 18px;
+font-weight: bold;
+margin-right: 25px;
+
         }
         .navbar {
             background-color: black;
@@ -51,7 +78,23 @@
         }
     </style>
 </head>
-<body>
+
+  <body>
+<nav class="nav1">
+    <div class="nav1div">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="appartment.html">Appartment</a></li>
+              <!-- <li><a href="property-details.html">Property Details</a></li> -->
+              <li><a href="contact.html" class="active">Contact Us</a></li>
+              <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
+            </ul>
+         
+            <!-- ***** Menu End ***** -->
+        
+        </div>
+        </nav>
+  
     <div class="container">
         <div class="navbar">
             <div class="navbar-header">
@@ -69,5 +112,17 @@
             <p>This is where you can manage notices, file complaints, and view/payments.</p>
         </div>
     </div>
+  
+                    <?php
+                    if (isset($_SESSION['id'])) {
+                    ?>
+                        <li><a href="#Blog"><?php echo $_SESSION['fname'] ?></a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    <?php } else { ?>
+                        <a href="login.php">
+                            <i class="fas fa-user icon"></i>
+                        </a>
+                    <?php } ?>
+                  
 </body>
 </html>
