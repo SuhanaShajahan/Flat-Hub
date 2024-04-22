@@ -179,14 +179,13 @@ https://templatemo.com/tm-591-villa-agency
 <center>
 <div class="container">
 <form method="post" action="loginact.php">
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" required="">
-      <br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required="">
-      
-      <button type="submit" name="submit">Login</button>
-      <p>Don't have an account? <a href="register.php">Sign up</a>.</p>
+        <h1>SignIn</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" required placeholder="Enter Email" name="email">
+        <label for="password"><b>Password</b></label>
+        <input type="password" required placeholder="Enter Password" name="password">
+        <button type="submit" name="submit" class="registerbtn"><strong>log in</strong></button><br>
+        <p>Don't have an account? <a href="register.php">Sign up</a>.</p>
 </div></center>
 
 
@@ -194,7 +193,7 @@ https://templatemo.com/tm-591-villa-agency
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. 
+        <p> 
         
         <a rel="nofollow" href="https://templatemo.com" target="_blank"></a> : <a href="https://themewagon.com"></a></p>
       </div>
