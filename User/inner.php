@@ -29,7 +29,7 @@
         {
             display: flex;
             align-items: left;
-            justify-content: right;
+            justify-content: center;
         }
         li{
             list-style: none;
