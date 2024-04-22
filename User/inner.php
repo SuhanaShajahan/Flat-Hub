@@ -19,7 +19,7 @@
         }
 
         .nav1{
-            background-color: orangered;
+            background-color: black;
             color: #fff;
        font-family: calibri;
        padding-right: 15px;
@@ -36,7 +36,7 @@
             display: inline-block;
         }
         li a{
-color: black;
+color: white;
 font-size: 18px;
 font-weight: bold;
 margin-right: 25px;
