@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +22,10 @@
         border-collapse: collapse;
         background-color: white;
     }
-
+button{
+  color:white;
+  background-color: red;
+}
     th, td {
         padding: 10px;
         border-bottom: 1px solid #ddd;
@@ -41,6 +46,7 @@
     tr td:last-child {
         border-right: none;
     }
+    
 </style>
 </head>
 
@@ -55,7 +61,7 @@
   
               <!-- Default Table -->
 <body>
-    <h2>USER REGISTERATION</h2>
+    <h1>USER REGISTRATION</h1>
     <table class="table">
         <thead>
         <tr>

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notice</title>
     <style>
-        body {
-            background: linear-gradient(to top left, white 0%, #f35525 100%);
+         html, body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(to top left, white 0%, #f35525 100%);
+            height: 100%;
         }
         .container {
             width: 80%;
@@ -26,8 +27,8 @@
         .btn-new-notice {
             margin-bottom: 20px;
             float: right;
-            margin-top: -10px; /* Adjusted margin to align with heading */
-            margin-right: 10px;
+            margin-top: 13px; /* Adjusted margin to align with heading */
+            margin-right: 80px;
             padding: 10px 12px;
             text-decoration: none;
             background-color: black;
@@ -40,9 +41,11 @@
             background-color: rgb(114, 95, 95); /* Darker color on hover */
         }
         table {
-            width: 100%;
+            width: 1000px;
             border-collapse: collapse;
             margin-top: 20px;
+            margin-left: 70px;
+            margin: 55px auto;
         }
         th, td {
             border: 1px solid black;
@@ -72,11 +75,33 @@
         .btn-delete:hover {
             background-color: #5c302d;
         }
+        .navbar {
+        background-color: black; /* Changed to black */
+        overflow: hidden;
+        text-align: center; /* Center align the navbar content */
+    }
+    .navbar a {
+        display: inline-block; /* Make the link a block element to center it */
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 68px;
+        margin-right: 1000px;
+    }
+    .navbar h1 {
+        float: left;
+        margin-left: 20px;
+        color: white;
+    }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Notice</h1>
+    
+        <div class="navbar">
+            <h1>Notice</h1>
+            <a href="#"><u>Home</u></a>
+        </div>
         <a href="new_notice.html" class="btn-new-notice">New Notice</a>
         <table>
             <thead>
@@ -105,6 +130,6 @@
                 <!-- Additional rows can be added here -->
             </tbody>
         </table>
-    </div>
+    
 </body>
 </html>
