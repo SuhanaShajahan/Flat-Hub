@@ -5,36 +5,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>User Registration</title>
+<title>View Register</title>
 <style>
-    body {
+    html, body {
         font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to top left, white 0%, #f35525 100%);
+        height: 100%;
     }
 
-    h2 {
+    h1 {
         text-align: center;
+        margin: 35px;
     }
 
     table {
         width: 80%;
-        margin: 20px auto;
-        border-collapse: collapse;
+        margin: 55px auto;
+        border-collapse: separate;
+        border-spacing: 0 8px; /* Adjust the spacing between rows */
         background-color: white;
     }
-button{
-  color:white;
-  background-color: red;
-}
+
     th, td {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
+        padding: 20px;
+        border-bottom: 1px solid #ddd; /* Add horizontal lines between rows */
         text-align: left;
-        border-right: 1px solid #ddd; /* Vertical lines */
+        border-right: 1px solid #ddd; /* Add vertical lines between columns */
     }
 
     th {
-        background-color: orange;
+        background-color: rgb(3, 3, 3);
         color: white;
     }
 
@@ -46,38 +48,100 @@ button{
     tr td:last-child {
         border-right: none;
     }
+
+    .navbar {
+        background-color: black;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 68px;
+        margin-right: 1000px;
+    }
+
+    .navbar h1 {
+        float: left;
+        margin-left: 20px;
+        color: white;
+    }
 </style>
 </head>
-
-    <!-- End Page Title -->
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-11">
-  
-          <div class="card" style="margin-left: 300px;">
-            <div class="card-body">
-  
-  
-              <!-- Default Table -->
 <body>
-    <h2>USER REGISTERATION</h2>
-    <table class="table">
-        <thead>
+    <div class="navbar">
+        <h1>User Registration</h1>
+        <a href="adminhome.html"><u>Home</u></a>
+    </div>
+    <table>
         <tr>
-            <th scope="col">Register ID</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Address</th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Password</th>
-            <th scope="col">Delete</th>
+            <th>Register ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Password</th>
+            <th>Delete</th>
         </tr>
-    </thead>
-    <tbody>
-    </body>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
 </html>
-  
+
     <?php include("config.php");
 
                 $query = "SELECT * FROM `tbl_register`";
