@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -132,7 +134,7 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </header>
   <div class="mainform">
-    <form id="complaintForm">
+    <form id="complaintForm" action="complaintact.php" method="POST">>
 
 
       <!--Header-->
@@ -148,7 +150,7 @@ https://templatemo.com/tm-591-villa-agency
 
       <br><br>
       <!-- Name-->
-
+    
       <div class="form-group">
         <label for="fname"><b>Resident Name:</b></label>
         <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname">
@@ -212,9 +214,7 @@ https://templatemo.com/tm-591-villa-agency
 
 
       <!--Submit Button-->
-      <button style="margin-top: 20px;" type="button" class="btn btn-outline-primary" >Submit</button>
-
-
+      <button style="margin-top: 20px;" type="button" name="submit"  class="btn btn-outline-primary">Submit</button>
     </form>
   </div>
 

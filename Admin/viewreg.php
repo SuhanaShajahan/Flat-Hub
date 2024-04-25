@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +22,10 @@
         border-collapse: collapse;
         background-color: white;
     }
-
+button{
+  color:white;
+  background-color: red;
+}
     th, td {
         padding: 10px;
         border-bottom: 1px solid #ddd;

@@ -2,16 +2,15 @@
 include("config.php");
 if(isset($_POST['submit']))
 {
-$fname=$_POST['fname'];
-$lname=$_POST['lname'];
+$residentname=$_POST['residentname'];
+$appartmentno=$_POST['appartmentno'];
+$phoneno=$_POST['phoneno'];
 $email=$_POST['email'];
-$address=$_POST['address'];
-$phone=$_POST['phone'];
-$password=$_POST['password'];
+$complaint=$_POST['complaint'];
 
 
 
-$sql="INSERT INTO `tbl_complaint`(`fname`,`lname`,`email`,`address`,`phone`,`password`)VALUES('$fname','$lname','$email','$address','$phone','$password')";
+$sql="INSERT INTO `tbl_complaint`(`residentname`,`appartmentno`,`phoneno`,`email`,`complaint`)VALUES('$residentname','$appartmentno','$phoneno','$email','$complaint')";
 if(mysqli_query($con,$sql))
 {
     header("location:complaint.php");
