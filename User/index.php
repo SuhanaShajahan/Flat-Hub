@@ -87,7 +87,7 @@ https://templatemo.com/tm-591-villa-agency
                     <li><a href="contact.html" class="active">Contact Us</a></li>
                     <li><a href="appartment.html" class="active">Appartments</a></li>
                       <li><a href="register.html">Register</a></li>
-                      <li><a href="login.html"></i> Login</a></li>
+                      <li><a href="login.php"></i> Login</a></li>
                 </ul>   
                   <a class='menu-trigger'>
                       <span>Menu</span>

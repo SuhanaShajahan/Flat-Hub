@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -222,7 +224,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/icons/mdi.html">
+              <a class="nav-link" href="viewreg.php">
                 <span class="menu-title">View Register</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
@@ -234,7 +236,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="notice.html">
+              <a class="nav-link" href="notice.php">
                 <span class="menu-title">Notice</span>
                 <i class="mdi mdi-bell menu-icon"></i>
               </a>
