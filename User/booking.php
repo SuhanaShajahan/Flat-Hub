@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -288,7 +290,7 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div> -->
   <div class="container">
-    <form action="#" method="post">
+    <form action="bookingact.php" method="POST">>
         <label for="fname">First Name:</label>
         <input type="text" id="fname" name="fname" required>
     

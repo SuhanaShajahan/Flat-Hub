@@ -134,7 +134,7 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </header>
   <div class="mainform">
-    <form id="complaintForm" action="complaintact.php" method="POST">>
+    <form action="complaintact.php" method="POST">>
 
 
       <!--Header-->
@@ -152,15 +152,15 @@ https://templatemo.com/tm-591-villa-agency
       <!-- Name-->
     
       <div class="form-group">
-        <label for="fname"><b>Resident Name:</b></label>
-        <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname">
+        <label for=" residentname"><b>Resident Name:</b></label>
+        <input type="text" class="form-control" id="subject"  name="residentname">
       </div>
 
       <br>
 
       <div class="form-group">
-        <label for="lname"><b>Apartment number:</b></label>
-        <input type="text" class="form-control" id="lname" placeholder="Enter apartment" name="lname">
+        <label for="appartmentno"><b>Apartment number:</b></label>
+        <input type="text" class="form-control" id="subject" name="appartmentno" required>
       </div>
 
       <br>
@@ -168,14 +168,14 @@ https://templatemo.com/tm-591-villa-agency
       <!-- Phone number-->
 
       <div class="form-group">
-        <label for="phoneNo"> <b>Phone Number: </b> </label>
-        <input type="text" id="phone" class="form-control" placeholder="Enter phone Number" name="phoneNo">
+        <label for="phoneno"> <b>Phone Number: </b> </label>
+        <input type="text" class="form-control" id="subject" name="phoneno" pattern="[0-9]{10}" title="Enter 10 Digits" required>
       </div>
 
       <br>
       <div class="form-group">
         <label for="email"> <b>Email Address: </b> </label>
-        <input type="text" id="address" class="form-control" placeholder="Enter email" name="phoneNo">
+        <input type="text" id="email" class="form-control"  name="email">
       </div>
 
       <br>
@@ -210,11 +210,11 @@ https://templatemo.com/tm-591-villa-agency
       <!-- Complaint Details-->
 
       <label for="subject"><b>Complaint Details:</b></label>
-      <textarea id="subject" name="subject" placeholder="Enter your complaint details......." style="height:200px"></textarea>
+      <textarea id="subject" name="complaint" placeholder="Enter your complaint details......." style="height:200px"></textarea><br>
 
 
       <!--Submit Button-->
-      <button style="margin-top: 20px;" type="button" name="submit"  class="btn btn-outline-primary">Submit</button>
+      <input type="submit" value="submit" name="submit">
     </form>
   </div>
 
