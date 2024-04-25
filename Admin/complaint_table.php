@@ -44,10 +44,32 @@
     tr td:last-child {
         border-right: none;
     }
+    .navbar {
+        background-color: black; /* Changed to black */
+        overflow: hidden;
+        text-align: center; /* Center align the navbar content */
+    }
+    .navbar a {
+        display: inline-block; /* Make the link a block element to center it */
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 68px;
+        margin-right: 1000px;
+    }
+    .navbar h1 {
+        float: left;
+        margin-left: 20px;
+        color: white;
+    }
 </style>
 </head>
 <body>
-    <h1>Complaints</h1>
+    <div class="navbar">
+        <h1>Complaints</h1>
+        <a href="#"><u>Home</u></a>
+    </div>
     <table>
         <tr>
             <th>Register ID</th>

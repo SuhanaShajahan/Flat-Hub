@@ -228,13 +228,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
+              <a class="nav-link" href="booking_table.html">
                 <span class="menu-title">View Booking</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="notice.html">
+              <a class="nav-link" href="notice_table.html">
                 <span class="menu-title">Notice</span>
                 <i class="mdi mdi-bell menu-icon"></i>
               </a>

@@ -41,6 +41,7 @@
     tr td:last-child {
         border-right: none;
     }
+    
 </style>
 </head>
 
@@ -55,7 +56,7 @@
   
               <!-- Default Table -->
 <body>
-    <h2>USER REGISTERATION</h2>
+    <h1>USER REGISTRATION</h1>
     <table class="table">
         <thead>
         <tr>
