@@ -148,9 +148,6 @@ https://templatemo.com/tm-591-villa-agency
     <label for="password">Password:</label>
     <input type="password" id="password" name="password"  required>
 
-    <label for="confirm_password">Confirm Password:</label>
-    <input type="password" id="confirm_password" name="confirm_password" required>
-
     <input type="submit" value="Register" name="submit">
     <p>Already have an account? <a href="login.html">Log In</a></p>
 </form>

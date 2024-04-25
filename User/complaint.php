@@ -172,7 +172,7 @@ https://templatemo.com/tm-591-villa-agency
 
       <br>
       <div class="form-group">
-        <label for="Email"> <b>Email Address: </b> </label>
+        <label for="email"> <b>Email Address: </b> </label>
         <input type="text" id="address" class="form-control" placeholder="Enter email" name="phoneNo">
       </div>
 
