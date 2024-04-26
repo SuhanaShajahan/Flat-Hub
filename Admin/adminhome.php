@@ -224,13 +224,13 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="viewreg.html">
+              <a class="nav-link" href="viewreg.php">
                 <span class="menu-title">View Register</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="booking_table.html">
+              <a class="nav-link" href="booking_table.php">
                 <span class="menu-title">View Booking</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
@@ -244,7 +244,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="complaint_table.html">
+              <a class="nav-link" href="complaint_table.php">
                 <span class="menu-title">View Complaints</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>

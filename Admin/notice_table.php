@@ -102,7 +102,7 @@
             <h1>Notice</h1>
             <a href="#"><u>Home</u></a>
         </div>
-        <a href="new_notice.html" class="btn-new-notice">New Notice</a>
+        <a href="new_notice.php" class="btn-new-notice">New Notice</a>
         <table>
             <thead>
                 <tr>
