@@ -16,13 +16,7 @@
     height: 100px; /* Set fixed height to 100px */
     resize: none; /* Disable resizing */
   }
-  #noticeContainer {
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
+  
   .notice {
     margin-bottom: 20px;
   }
@@ -58,9 +52,7 @@
 </head>
 <body>
   <h1>Notice Board</h1>
-  <div id="noticeContainer">
-    <!-- Notices will be dynamically added here -->
-  </div>
+  
   
   <!-- Admin Panel -->
   <div id="adminPanel">
@@ -77,25 +69,10 @@
   </div>
 
   <script>
-    // JavaScript for adding notices
-    document.getElementById('noticeForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-      
-      // Get form values
-      var title = document.getElementById('noticeTitle').value;
-      var content = document.getElementById('noticeContent').value;
-      
-      // Create notice element
-      var noticeElement = document.createElement('div');
-      noticeElement.classList.add('notice');
-      noticeElement.innerHTML = '<h3>' + title + '</h3><p>' + content + '</p>';
-      
-      // Add notice to notice container
-      document.getElementById('noticeContainer').appendChild(noticeElement);
+    
       
       // Clear form fields
       document.getElementById('noticeForm').reset();
-    });
   </script>
 </body>
 </html>

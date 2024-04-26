@@ -255,7 +255,7 @@
                 
                 <i class="mdi mdi-eye menu-icon"></i>
               </a><li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <a class="nav-link" data-bs-toggle="collapse" href="#" aria-expanded="false" aria-controls="general-pages">
                   <span class="menu-title">View Notice</span>
                   
                   <i class="mdi mdi-eye menu-icon"></i>
