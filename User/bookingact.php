@@ -6,15 +6,15 @@ $fname=$_POST['fname'];
 $lname=$_POST['lname'];
 $email=$_POST['email'];
 $address=$_POST['address'];
-$phone=$_POST['phone'];
-$password=$_POST['password'];
-$confirm_password=$_POST['confirm_password'];
+$phoneno=$_POST['phoneno'];
+$numofbathroom=$_POST['numofbathroom'];
+$numofbedroom=$_POST['numofbedroom'];
+$state=$_POST['state'];
 
-
-$sql="INSERT INTO `tbl_register`(`fname`,`lname`,`email`,`address`,`phone`,`password`)VALUES('$fname','$lname','$email','$address','$phone','$password')";
+$sql="INSERT INTO `tbl_booking`(`fname`,`lname`,`email`,`address`,`phoneno`,`numofbathroom`,`numofbedroom`,`state`)VALUES('$fname','$lname','$email','$address','$phoneno','$numofbathroom','$numofbedroom','$state')";
 if(mysqli_query($con,$sql))
 {
-    header("location:login.php");
+    header("location:booking.php");
 }
 else
 {
