@@ -5,32 +5,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Complaints</title>
+<title>View Register</title>
 <style>
     html, body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to top left, white 0%, #f35525 100%);
-            height: 100%;
-        }
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to top left, white 0%, #f35525 100%);
+        height: 100%;
+    }
+
     h1 {
         text-align: center;
-        margin:35px;
+        margin: 35px;
     }
 
     table {
         width: 80%;
         margin: 55px auto;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0 8px; /* Adjust the spacing between rows */
         background-color: white;
     }
 
     th, td {
         padding: 20px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #ddd; /* Add horizontal lines between rows */
         text-align: left;
-        border-right: 1px solid #ddd; /* Vertical lines */
+        border-right: 1px solid #ddd; /* Add vertical lines between columns */
     }
 
     th {
@@ -46,13 +48,15 @@
     tr td:last-child {
         border-right: none;
     }
+
     .navbar {
-        background-color: black; /* Changed to black */
+        background-color: black;
         overflow: hidden;
-        text-align: center; /* Center align the navbar content */
+        text-align: center;
     }
+
     .navbar a {
-        display: inline-block; /* Make the link a block element to center it */
+        display: inline-block;
         color: white;
         text-align: center;
         padding: 14px 16px;
@@ -60,6 +64,7 @@
         margin-top: 68px;
         margin-right: 1000px;
     }
+
     .navbar h1 {
         float: left;
         margin-left: 20px;
@@ -69,24 +74,24 @@
 </head>
 <body>
     <div class="navbar">
-        <h1>Complaints</h1>
+        <h1>User Registration</h1>
         <a href="adminhome.php"><u>Home</u></a>
     </div>
     <table>
         <tr>
-            <th>Register ID</th>
-            <th>Resident Name</th>
-            <th>Apartment number</th>
+            <th>Booking ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Address</th>
             <th>Phone Number</th>
-            <th>Email Address</th>
-            <th>Complaint Details</th>
-            <th>Delete</th></tr>
-            <tbody>
-  </tr>
-  <tbody>
+            <th>Number of bathroom</th>
+            <th>Number of Bedroom</th>
+            <th>State</th>
+            </tr><tbody>
        <?php include("config.php");
 
-                $query = "SELECT * FROM `tbl_complaint`";
+                $query = "SELECT * FROM `tbl_booking`";
                 $book = mysqli_query($con, $query);
                 while ($row = mysqli_fetch_array($book)) {
 
@@ -96,25 +101,25 @@
 
                   <tr>
                   <td><?php echo $row['id'] ?></td>
-                    <td><?php echo $row['residentname'] ?></td>
-                    <td><?php echo $row['appartmentno'] ?></td>
-                    <td><?php echo $row['phoneno'] ?></td>
+                    <td><?php echo $row['fname'] ?></td>
+                    <td><?php echo $row['lname'] ?></td>
                     <td><?php echo $row['email'] ?></td>
-                    <td><?php echo $row['complaint'] ?></td>
-                  
-                  
-
+                    <td><?php echo $row['address'] ?></td>
+                    <td><?php echo $row['phoneno'] ?></td>
+                    <td><?php echo $row['numofbathroom'] ?></td>
+                    <td><?php echo $row['numofbedroom'] ?></td>
+                    <td><?php echo $row['state'] ?></td>
 
 
                     <?php
-                    echo "<td> <a href='deletecomplaint.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
+                    // echo "<td> <a href='deletereg.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
                     ?>
                   </tr>
                 <?php   } ?>
               </tbody>
-  </table>
-   <!-- End Default Table Example -->
-   </div>
+            </table>
+            <!-- End Default Table Example -->
+          </div>
         </div>
       </div>
     </div>
@@ -154,16 +159,3 @@
                      
                        
                      
-
-                       
-                   
-                  
-                     
-                     
-                     
-                     
-                       
-                     
-
-
-             

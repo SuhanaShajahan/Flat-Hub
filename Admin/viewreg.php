@@ -75,7 +75,7 @@
 <body>
     <div class="navbar">
         <h1>User Registration</h1>
-        <a href="adminhome.html"><u>Home</u></a>
+        <a href="adminhome.php"><u>Home</u></a>
     </div>
     <table>
         <tr>
@@ -87,62 +87,8 @@
             <th>Phone Number</th>
             <th>Password</th>
             <th>Delete</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</body>
-</html>
-
-    <?php include("config.php");
+            </tr><tbody>
+       <?php include("config.php");
 
                 $query = "SELECT * FROM `tbl_register`";
                 $book = mysqli_query($con, $query);
@@ -158,7 +104,7 @@
                     <td><?php echo $row['lname'] ?></td>
                     <td><?php echo $row['email'] ?></td>
                     <td><?php echo $row['address'] ?></td>
-                    <td><?php echo $row['Phone'] ?></td>
+                    <td><?php echo $row['phone'] ?></td>
                     <td><?php echo $row['password'] ?></td>
                   
 
@@ -177,6 +123,10 @@
       </div>
     </div>
   </section>
+    </table>
+</body>
+</html>
+
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const searchInput = document.getElementById("user-search");
@@ -199,8 +149,6 @@
     });
   </script>
 
-     
-   
                        
                    
                   
