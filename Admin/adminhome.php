@@ -224,29 +224,27 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="viewreg.php">
+              <a class="nav-link" href="viewreg.html">
                 <span class="menu-title">View Register</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="booking_table.php">
+              <a class="nav-link" href="booking_table.html">
                 <span class="menu-title">View Booking</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-<<<<<<< HEAD
               <a class="nav-link" href="notice_table.php">
-=======
-              <a class="nav-link" href="notice.php">
->>>>>>> 88bbf9aa360100d5d347ea6d97d792a5d92790fa
+              
+
                 <span class="menu-title">Notice</span>
                 <i class="mdi mdi-bell menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="complaint_table.php">
+              <a class="nav-link" href="complaint_table.html">
                 <span class="menu-title">View Complaints</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
