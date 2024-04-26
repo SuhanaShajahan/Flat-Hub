@@ -230,7 +230,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="booking_table.php">
+              <a class="nav-link" href="viewbookings.php">
                 <span class="menu-title">View Booking</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
@@ -244,19 +244,16 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="complaint_table.php">
+              <a class="nav-link" href="viewcomplaint.php">
                 <span class="menu-title">View Complaints</span>
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+              <a class="nav-link"  href="viewcontact.php" aria-expanded="false" aria-controls="general-pages" >
                 <span class="menu-title">View Contact</span>
                 
-                <i class="mdi mdi-eye menu-icon"></i>
-              </a><li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-                  <span class="menu-title">View Notice</span>
+        
                   
                   <i class="mdi mdi-eye menu-icon"></i>
                 </a>

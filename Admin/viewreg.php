@@ -90,7 +90,7 @@
             </tr><tbody>
        <?php include("config.php");
 
-                $query = "SELECT * FROM `tbl_complaint`";
+                $query = "SELECT * FROM `tbl_register`";
                 $book = mysqli_query($con, $query);
                 while ($row = mysqli_fetch_array($book)) {
 
@@ -100,12 +100,12 @@
 
                   <tr>
                   <td><?php echo $row['id'] ?></td>
-                    <td><?php echo $row['residentname'] ?></td>
-                    <td><?php echo $row['appartmentno'] ?></td>
-                    <td><?php echo $row['phoneno'] ?></td>
+                    <td><?php echo $row['fname'] ?></td>
+                    <td><?php echo $row['lname'] ?></td>
                     <td><?php echo $row['email'] ?></td>
-                    <td><?php echo $row['complaint'] ?></td>
-                  
+                    <td><?php echo $row['address'] ?></td>
+                    <td><?php echo $row['phone'] ?></td>
+                    <td><?php echo $row['password'] ?></td>
                   
 
 

@@ -1,11 +1,9 @@
-<?php
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Complaints</title>
+<title>Bookings</title>
 <style>
     html, body {
             font-family: Arial, sans-serif;
@@ -69,24 +67,24 @@
 </head>
 <body>
     <div class="navbar">
-        <h1>Complaints</h1>
+        <h1>Contacts</h1>
         <a href="adminhome.php"><u>Home</u></a>
     </div>
+   
     <table>
         <tr>
-            <th>Register ID</th>
-            <th>Resident Name</th>
-            <th>Apartment number</th>
-            <th>Phone Number</th>
+        <th>ID</th>
+            <th>Full Name</th>
             <th>Email Address</th>
-            <th>Complaint Details</th>
-            <th>Delete</th></tr>
-            <tbody>
-  </tr>
-  <tbody>
+            <th style="width: 200px;">Subject</th>
+            <th style="width: 200px;">Message</th>
+        </tr>
+
+    
+    <tbody>
        <?php include("config.php");
 
-                $query = "SELECT * FROM `tbl_complaint`";
+                $query = "SELECT * FROM `tbl_contact`";
                 $book = mysqli_query($con, $query);
                 while ($row = mysqli_fetch_array($book)) {
 
@@ -96,18 +94,17 @@
 
                   <tr>
                   <td><?php echo $row['id'] ?></td>
-                    <td><?php echo $row['residentname'] ?></td>
-                    <td><?php echo $row['appartmentno'] ?></td>
-                    <td><?php echo $row['phoneno'] ?></td>
+                    <td><?php echo $row['fname'] ?></td>
                     <td><?php echo $row['email'] ?></td>
-                    <td><?php echo $row['complaint'] ?></td>
+                    <td><?php echo $row['subject'] ?></td>
+                    <td><?php echo $row['message'] ?></td>
                   
                   
 
 
 
                     <?php
-                    echo "<td> <a href='deletecomplaint.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
+                    // echo "<td> <a href='deletecomplaint.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
                     ?>
                   </tr>
                 <?php   } ?>
@@ -119,7 +116,7 @@
       </div>
     </div>
   </section>
-    </table>
+    
 </body>
 </html>
 
@@ -165,5 +162,3 @@
                        
                      
 
-
-             
