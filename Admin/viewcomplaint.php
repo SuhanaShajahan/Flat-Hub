@@ -70,7 +70,7 @@
 <body>
     <div class="navbar">
         <h1>Complaints</h1>
-        <a href="adminhome.html"><u>Home</u></a>
+        <a href="adminhome.php"><u>Home</u></a>
     </div>
     <table>
         <tr>

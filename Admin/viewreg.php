@@ -75,7 +75,7 @@
 <body>
     <div class="navbar">
         <h1>User Registration</h1>
-        <a href="adminhome.html"><u>Home</u></a>
+        <a href="adminhome.php"><u>Home</u></a>
     </div>
     <table>
         <tr>
@@ -88,118 +88,63 @@
             <th>Password</th>
             <th>Delete</th>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+     
+        <tbody>
+        <?php include("config.php");
+
+$query = "SELECT * FROM `tbl_register`";
+$book = mysqli_query($con, $query);
+while ($row = mysqli_fetch_array($book)) {
+
+
+?>
+
+
+  <tr>
+    <td><?php echo $row['fname'] ?></td>
+    <td><?php echo $row['lname'] ?></td>
+    <td><?php echo $row['email'] ?></td>
+    <td><?php echo $row['address'] ?></td>
+ <td><?php echo $row['phone'] ?></td>
+     <td><?php echo $row['password'] ?></td>
+<?php
+    echo "<td> <a href='deletereg.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
+    ?>
+  </tr>
+<?php   } ?>
+</tbody>
+</table>
+<!-- End Default Table Example -->
+</div>
+</div>
+</div>
+</div>
+</section>
+ 
 </body>
 </html>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const searchInput = document.getElementById("user-search");
+const userTableRows = document.querySelectorAll("table.table tbody tr");
 
-    <?php include("config.php");
+searchInput.addEventListener("input", function() {
+const query = searchInput.value.toLowerCase();
 
-                $query = "SELECT * FROM `tbl_register`";
-                $book = mysqli_query($con, $query);
-                while ($row = mysqli_fetch_array($book)) {
+userTableRows.forEach((row) => {
+const name = row.querySelector("td:nth-child(1)").textContent.toLowerCase();
+const email = row.querySelector("td:nth-child(2)").textContent.toLowerCase();
 
+if (name.includes(query) || email.includes(query)) {
+row.style.display = "table-row";
+} else {
+row.style.display = "none";
+}
+});
+});
+});
+</script>
 
-                ?>
-
-
-                  <tr>
-                  <td><?php echo $row['id'] ?></td>
-                    <td><?php echo $row['fname'] ?></td>
-                    <td><?php echo $row['lname'] ?></td>
-                    <td><?php echo $row['email'] ?></td>
-                    <td><?php echo $row['address'] ?></td>
-                    <td><?php echo $row['Phone'] ?></td>
-                    <td><?php echo $row['password'] ?></td>
-                  
-
-
-
-                    <?php
-                    echo "<td> <a href='deletereg.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
-                    ?>
-                  </tr>
-                <?php   } ?>
-              </tbody>
-            </table>
-            <!-- End Default Table Example -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const searchInput = document.getElementById("user-search");
-      const userTableRows = document.querySelectorAll("table.table tbody tr");
-
-      searchInput.addEventListener("input", function() {
-        const query = searchInput.value.toLowerCase();
-
-        userTableRows.forEach((row) => {
-          const name = row.querySelector("td:nth-child(1)").textContent.toLowerCase();
-          const email = row.querySelector("td:nth-child(2)").textContent.toLowerCase();
-
-          if (name.includes(query) || email.includes(query)) {
-            row.style.display = "table-row";
-          } else {
-            row.style.display = "none";
-          }
-        });
-      });
-    });
-  </script>
-
-     
    
                        
                    

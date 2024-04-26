@@ -106,7 +106,7 @@ https://templatemo.com/tm-591-villa-agency
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <h1>FlatHub</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
@@ -149,7 +149,7 @@ https://templatemo.com/tm-591-villa-agency
     <input type="password" id="password" name="password"  required>
 
     <input type="submit" value="Register" name="submit">
-    <p>Already have an account? <a href="login.html">Log In</a></p>
+    <p>Already have an account? <a href="login.php">Log In</a></p>
 </form>
 </div>  
   <footer>
