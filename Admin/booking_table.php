@@ -67,37 +67,18 @@
 </head>
 <body>
     <div class="navbar">
-        <h1>Bookings</h1>
+        <h1>Contacts</h1>
         <a href="adminhome.html"><u>Home</u></a>
     </div>
    
     <table>
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th style="width: 200px;">Email</th>
-            <th style="width: 200px;">Address</th>
-            <th>Phone Number</th>
-            <th style="width: 90px;">Number of Bathrooms</th>
-            <th style="width: 90px;">Number of Bedrooms</th>
-            <th>State</th>
+            <th>Full Name</th>
+            <th>Email Address</th>
+            <th style="width: 200px;">Subject</th>
+            <th style="width: 200px;">Message</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -108,12 +89,13 @@
             <td></td>
             <td></td>
             <td></td>
+        </tr>
+        <tr>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
-        
     </table>
 </body>
 </html>
