@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,12 +132,12 @@ https://templatemo.com/tm-591-villa-agency
           </div>
         </div>
         <div class="col-lg-6">
-          <form id="contact-form" action="" method="post">
+          <form id="contact-form" action="contactact.php" method="post">
             <div class="row">
               <div class="col-lg-12">
                 <fieldset>
-                  <label for="name">Full Name</label>
-                  <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                  <label for="fname">Full Name</label>
+                  <input type="fname" name="fname" id="fname" placeholder="Your Name..." autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -158,7 +160,7 @@ https://templatemo.com/tm-591-villa-agency
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+                <input type="submit" value="submit" name="submit">
                 </fieldset>
               </div>
             </div>
