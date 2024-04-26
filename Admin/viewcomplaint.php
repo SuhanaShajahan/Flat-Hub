@@ -80,52 +80,9 @@
             <th>Phone Number</th>
             <th>Email Address</th>
             <th>Complaint Details</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</body>
-</html>
-<?php include("config.php");
+            <th> delete</th>
+        </tr><tbody>
+       <?php include("config.php");
 
                 $query = "SELECT * FROM `tbl_complaint`";
                 $book = mysqli_query($con, $query);
@@ -160,6 +117,10 @@
       </div>
     </div>
   </section>
+    </table>
+</body>
+</html>
+
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const searchInput = document.getElementById("user-search");

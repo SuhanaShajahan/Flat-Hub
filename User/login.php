@@ -135,8 +135,8 @@ https://templatemo.com/tm-591-villa-agency
    
     <label for="email">Email </label>
     <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com$">
-    <label for="pwd">Password:</label>
-    <input type="pwd" id="pwd" name="pwd"  required>
+    <label for="passwordd">Password:</label>
+    <input type="password" id="password" name="password"  required>
 
     <input type="submit" value="Login" name="submit">
     <p>Don't have an account? <a href="register.php">Sign up</a></p>
