@@ -139,7 +139,7 @@ https://templatemo.com/tm-591-villa-agency
     <input type="pwd" id="pwd" name="pwd"  required>
 
     <input type="submit" value="Login" name="submit">
-    <p>Don't have an account? <a href="register.html">Sign up</a></p>
+    <p>Don't have an account? <a href="register.php">Sign up</a></p>
 </form>
 </div>  
   <footer>

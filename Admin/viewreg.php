@@ -88,61 +88,9 @@
             <th>Password</th>
             <th>Delete</th>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</body>
-</html>
-
-<?php include("config.php");
+     
+        <tbody>
+        <?php include("config.php");
 
 $query = "SELECT * FROM `tbl_register`";
 $book = mysqli_query($con, $query);
@@ -154,12 +102,12 @@ while ($row = mysqli_fetch_array($book)) {
 
   <tr>
     <td><?php echo $row['fname'] ?></td>
+    <td><?php echo $row['lname'] ?></td>
     <td><?php echo $row['email'] ?></td>
-    <td><?php echo $row['password'] ?></td>
-
-
-
-    <?php
+    <td><?php echo $row['address'] ?></td>
+ <td><?php echo $row['phone'] ?></td>
+     <td><?php echo $row['password'] ?></td>
+<?php
     echo "<td> <a href='deletereg.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
     ?>
   </tr>
@@ -172,7 +120,9 @@ while ($row = mysqli_fetch_array($book)) {
 </div>
 </div>
 </section>
-
+ 
+</body>
+</html>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 const searchInput = document.getElementById("user-search");
@@ -195,8 +145,6 @@ row.style.display = "none";
 });
 </script>
 
-</main>
-     
    
                        
                    
