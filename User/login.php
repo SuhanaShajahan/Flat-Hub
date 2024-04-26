@@ -138,7 +138,7 @@ https://templatemo.com/tm-591-villa-agency
     <label for="password">Password:</label>
     <input type="password" id="password" name="password"  required>
 
-    <input type="submit" value="Register" name="submit">
+    <input type="submit" value="Login" name="submit">
     <p>Don't have an account? <a href="register.html">Sign up</a></p>
 </form>
 </div>  
