@@ -129,7 +129,7 @@ https://templatemo.com/tm-591-villa-agency
 <br>
 </div>
 <div class="container">
-<form action="regact.php" method="POST">
+<form action="loginact.php" method="POST">
     
    
     <label for="email">Email </label>
