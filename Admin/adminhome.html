@@ -236,11 +236,9 @@
               </a>
             </li>
             <li class="nav-item">
-<<<<<<< HEAD
-              <a class="nav-link" href="notice_table.html">
-=======
-              <a class="nav-link" href="notice.php">
->>>>>>> 88bbf9aa360100d5d347ea6d97d792a5d92790fa
+              <a class="nav-link" href="notice_table.php">
+              
+
                 <span class="menu-title">Notice</span>
                 <i class="mdi mdi-bell menu-icon"></i>
               </a>
