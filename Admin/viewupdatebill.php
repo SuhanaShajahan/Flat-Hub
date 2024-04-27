@@ -80,8 +80,10 @@
     <table>
         <tr>
         <th> ID</th>
+        <th> Resident ID</th>
             <th>Month</th>
             <th>Amount</th>
+            <th>Bill Status</th> 
             <th>Payment Status</th>
             <th>Update</th>
             <th> Delete</th>
@@ -98,8 +100,10 @@
 
                   <tr>
                   <td><?php echo $row['id'] ?></td>
+                  <td><?php echo $row['residentid'] ?></td>
                     <td><?php echo $row['month'] ?></td>
                     <td><?php echo $row['amount'] ?></td>
+                    <td><?php echo $row['bill_sts'] ?></td>
                     <td><?php echo $row['payment_sts'] ?></td>
                     
                       

@@ -121,6 +121,7 @@
             <a href="notice.php">Notice</a>
             <a href="complaint.php">Complaints</a>
             <a href="payment.php">Payments</a>
+            <a href="payment3.php">Payment History</a>
         </div>
         <div class="content">
             <!-- Content area where you can add specific content for each section -->

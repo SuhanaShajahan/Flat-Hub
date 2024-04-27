@@ -48,7 +48,7 @@
 <div class="container">
     <h1>Payment Success</h1>
     <h3>Your last payment was successful</h3>
-    <a href="inner.html" class="back-to-home"><u>Go back to Home</u></a>
+    <a href="inner.php" class="back-to-home"><u>Go back to Home</u></a>
 </div>
 
 </body>

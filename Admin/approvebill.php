@@ -1,27 +1,27 @@
 <?php
 include("config.php");
-$oid = $_GET['oid'];
-$sql=mysqli_query($con,"SELECT * FROM `tbl_order` WHERE `id`='$oid'");
+$oid = $_GET['residentid'];
+$sql=mysqli_query($con,"SELECT * FROM `tbl_electricity` WHERE `id`='$residentid'");
 $row = mysqli_fetch_array($sql);
-if($row['order_status']=="Pending Approval" && $row['payment_status']=="Paid" ){
-    $query = "UPDATE `tbl_order` SET `order_status` = 'Approved' , `payment_status` = 'Paid' WHERE `id` = '$oid';";
-}elseif($row['order_status']=="Approved" && $row['payment_status']=="Paid"){
-    $query = "UPDATE `tbl_order` SET `order_status` = 'Approved' , `payment_status` = 'Paid' WHERE `id` = '$oid';";
-}elseif($row['order_status']=="Approved" && $row['payment_status']=="Not Paid"){
-    $query = "UPDATE `tbl_order` SET `order_status` = 'Pending Approval' , `payment_status` = 'Not Paid' WHERE `id` = '$oid';";
-}elseif($row['order_status']=="Cancelled" && $row['payment_status']=="Refund Processing"){
-    $query = "UPDATE `tbl_order` SET `order_status` = 'Cancelled' , `payment_status` = 'Refund Processing' WHERE `id` = '$oid';";
-}elseif($row['order_status']=="Cancelled" && $row['payment_status']=="Refunded"){
-    $query = "UPDATE `tbl_order` SET `order_status` = 'Cancelled' , `payment_status` = 'Refunded' WHERE `id` = '$oid';";
-}elseif($row['order_status']=="Pending Approval" && $row['payment_status']=="Not Paid" ){
-    $query = "UPDATE `tbl_order` SET `order_status` = 'Approved' , `payment_status` = 'Not Paid' WHERE `id` = '$oid';";
+if($row['bill_sts']=="Pending Approval" && $row['payment_sts']=="Paid" ){
+    $query = "UPDATE `tbl_electricity` SET `bill_sts` = 'Approved' , `payment_sts` = 'Paid' WHERE `id` = '$residentid';";
+}elseif($row['bill_sts']=="Approved" && $row['payment_sts']=="Paid"){
+    $query = "UPDATE `tbl_electricity` SET `bill_sts` = 'Approved' , `payment_sts` = 'Paid' WHERE `id` = '$residentid';";
+}elseif($row['bill_sts']=="Approved" && $row['payment_sts']=="Not Paid"){
+    $query = "UPDATE `tbl_electricity` SET `bill_sts` = 'Pending Approval' , `payment_status` = 'Not Paid' WHERE `id` = '$residentid';";
+}elseif($row['bill_sts']=="Cancelled" && $row['payment_sts']=="Refund Processing"){
+    $query = "UPDATE `tbl_electricity` SET `bill_sts` = 'Cancelled' , `payment_sts` = 'Refund Processing' WHERE `id` = '$residentid';";
+}elseif($row['bill_sts']=="Cancelled" && $row['payment_sts']=="Refunded"){
+    $query = "UPDATE `tbl_electricity` SET `bill_sts` = 'Cancelled' , `payment_status` = 'Refunded' WHERE `id` = '$residentid';";
+}elseif($row['bill_sts']=="Pending Approval" && $row['payment_sts']=="Not Paid" ){
+    $query = "UPDATE `tbl_electricity` SET `bill_sts` = 'Approved' , `payment_sts` = 'Not Paid' WHERE `id` = '$oidresidentid';";
 }else{
-    $query = "UPDATE `tbl_order` SET `order_status` = 'Pending Approval' , `payment_status` = 'Pending Payment' WHERE `id` = '$oid';";
+    $query = "UPDATE `tbl_electricity` SET `bill_sts` = 'Pending Approval' , `payment_sts` = 'Pending Payment' WHERE `id` = '$residentid';";
 }
 
 if(mysqli_query($con,$query))
 {
-    header("location:vieworders.php");
+    header("location:viewelecticity.php");
 }
 else{
     echo "Error";

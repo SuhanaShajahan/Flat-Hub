@@ -1,4 +1,3 @@
-
 <?php
 ?>
 <!DOCTYPE html>
@@ -80,12 +79,14 @@
     </div>
     <table>
         <tr>
-       
-        <th>  Resident ID</th>
+        <th> ID</th>
+        <th> Resident ID</th>
             <th>Month</th>
             <th>Amount</th>
-            <th>Proceed</th>
-      
+            <th>Bill Status</th>
+            <th>Payment Status</th>
+            <th> View</th>
+            <th> cancel</th>
             </tr><tbody>
        <?php include("config.php");
 
@@ -98,14 +99,23 @@
 
 
                   <tr>
-             
+                  <td><?php echo $row['id'] ?></td>
                   <td><?php echo $row['residentid'] ?></td>
                     <td><?php echo $row['month'] ?></td>
                     <td><?php echo $row['amount'] ?></td>
-           
+                    <td><?php echo $row['bill_sts'] ?></td>
+                    <td><?php echo $row['payment_sts'] ?></td>
+                    <td>
+                            <a href="viewbill.php?id=<?php echo $row['residentid'] ?>"><button class="remove-button">View</button></a>
+                        </td>
+                        <td>
+                            <a href="cancelbill.php?id=<?php echo $row['residentid'] ?>"><button class="remove-button">Cancel</button></a>
+                        </td>
+                      
+
 
                     <?php
-                    echo "<td> <a href='payment2.php?id=" . $row['residentid'] . "'><button class='btn btn-danger'>Pay</button></a></td>";
+                    // echo "<td> <a href='deletereg.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
                     ?>
                   </tr>
                 <?php   } ?>
@@ -118,12 +128,6 @@
     </div>
   </section>
     </table>
-  
-    
-
-    
-
-  
 </body>
 </html>
 
