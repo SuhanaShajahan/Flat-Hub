@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,10 +104,10 @@
     </div>
 <h2 style="margin-top:40px;"><center>Debit-Card Payment</center></h2>
 <div class="form-container">
-    <form>
+    <form action="success.php" method="POST">
         <div class="form-group">
-            <label for="totalAmount">Total Amount:</label>
-            <input type="text" id="totalAmount" name="totalAmount" readonly value="$100">
+            <label for="amount">Total Amount:</label>
+            <input type="text" id="price" name="amount" readonly value=" <?php echo $row['amount'] ?> ">
         </div>
         <div class="form-group">
             <label for="cardNumber">Card Number:</label>
@@ -126,6 +128,64 @@
         <div class="form-group">
             <input type="submit" value="Proceed to Payment">
         </div>
+        <?php include("config.php");
+
+$query = "SELECT * FROM `tbl_electricity`";
+$book = mysqli_query($con, $query);
+while ($row = mysqli_fetch_array($book)) {
+
+
+?>
+
+
+  <tr>
+
+    <td><?php echo $row['amount'] ?></td>
+    
+    
+      
+
+
+    <?php
+    
+    ?>
+
+<?php   } ?>
+
+<!-- End Default Table Example -->
+
+</form>
+</div>
+
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const searchInput = document.getElementById("user-search");
+const userTableRows = document.querySelectorAll("table.table tbody tr");
+
+searchInput.addEventListener("input", function() {
+const query = searchInput.value.toLowerCase();
+
+userTableRows.forEach((row) => {
+const name = row.querySelector("td:nth-child(1)").textContent.toLowerCase();
+const email = row.querySelector("td:nth-child(2)").textContent.toLowerCase();
+
+if (name.includes(query) || email.includes(query)) {
+row.style.display = "table-row";
+} else {
+row.style.display = "none";
+}
+});
+});
+});
+</script>
+
+       
+   
+  
+     
     </form>
 </div>
 

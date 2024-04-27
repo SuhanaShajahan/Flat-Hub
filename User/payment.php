@@ -98,13 +98,12 @@
     </div>
     <table>
         <tr>
-        <th> ID</th>
-   
+       
+        <th>  Resident ID</th>
             <th>Month</th>
             <th>Amount</th>
-            <th>Payment Status</th>
-            <th>View</th>
-            <th> Action</th>
+            <th>Proceed</th>
+      
             </tr><tbody>
        <?php include("config.php");
 
@@ -117,21 +116,18 @@
 
 
                   <tr>
-                  <td><?php echo $row['id'] ?></td>
+             
+                  <td><?php echo $row['residentid'] ?></td>
                     <td><?php echo $row['month'] ?></td>
                     <td><?php echo $row['amount'] ?></td>
-                    <td><?php echo $row['payment_sts'] ?></td>
-                    <td>
-                            <a href="approveorder.php?id=<?php echo $row['id'] ?>"><button class="remove-button">Approve</button></a>
-                        </td>
-                        <td>
-                            <a href="approverefund.php?id=<?php echo $row['id'] ?>"><button class="remove-button">Refund</button></a>
-                        </td>
-                      
-
+           
 
                     <?php
+<<<<<<< HEAD
+                    echo "<td> <a href='payment2.php?id=" . $row['residentid'] . "'><button class='btn btn-danger'>Pay</button></a></td>";
+=======
                    
+>>>>>>> 739d51d453168dd521c943b710a88b57a78d1e65
                     ?>
                   </tr>
                 <?php   } ?>
@@ -144,6 +140,12 @@
     </div>
   </section>
     </table>
+  
+    
+
+    
+
+  
 </body>
 </html>
 

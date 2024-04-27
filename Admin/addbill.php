@@ -13,7 +13,8 @@
 <form action="addbillact.php" method="POST">
     
    
-
+<label for="residentid">Resident iD:</label>
+<input type="type" id="residentid" name="month"  required>
     <label for="month">Month:</label>
     <input type="type" id="month" name="month"  required>
     <label for="amount">Amount:</label>
