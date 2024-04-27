@@ -70,58 +70,52 @@
             justify-content: center;
             margin-left:900px;
         }
-        .btn{
 
-            background-color: #f35525;
-            border-radius: 10px;
-            width: 100px;
-            height: 32px;
-            text-decoration: none;
-        }
-
-        .btn:hover{
+        .nav1 .logout-btn:hover{
             background:#4d3831 ;
+        }
+        .nav1 .logout-btn {
+            margin-left: 10px;
+            background-color: #f35525;
+            color: #fff;
+            border-radius: 5px;
+            padding: 8px 15px;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <nav class="nav1">
         <div class="nav1div">
+            
                 <ul>
-                  <li><a href="index.php">Home</a></li>
-                  <li><a href="contact.php">Contact Us</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="logout.php" class="logout-btn">Logout</a></li>
                   <!-- <li><a href="property-details.html">Property Details</a></li> -->
                   
-                  <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
                 </ul>
-                <div class="icon-container">
-                    <a href="#">
-                        <!-- <i class="fas fa-search icon"></i> -->
-                    </a>
-                    <?php
-                    if (isset($_SESSION['userid'])) {
-                    ?>
-                        <li><a href="#Blog"><?php echo $_SESSION['username'] ?></a></li>
-                        <li><a href="logout.php">Logout</a></li>
-                    <?php } else { ?>
-                        <a href="login.php">
-                            <i class="fas fa-user icon"></i>
-                        </a>
-                    <?php } ?>
+             
                 <!-- ***** Menu End ***** -->
             
             </div>
             </nav>
     <div class="container">
         <div class="navbar">
+            <img style="margin-left:66px;" src="icons8-authentication-48.png" alt="User Icon">
             <div class="navbar-header">
-                <img src="icons8-authentication-48.png" alt="User Icon">
-                <p>Welcome, John Doe</p>
+                
+                
             </div>
+<<<<<<< HEAD
             <a href="notice.php">Notice</a>
             <a href="complaint.php">Complaints</a>
             <a href="payment.php">Payments</a>
             <a href="payment3.php">Payment History</a>
+=======
+            <a href="notice.html">Notice</a>
+            <a href="complaint.html">Complaints</a>
+            <a href="payment.html">Payments</a>
+>>>>>>> 739d51d453168dd521c943b710a88b57a78d1e65
         </div>
         <div class="content">
             <!-- Content area where you can add specific content for each section -->

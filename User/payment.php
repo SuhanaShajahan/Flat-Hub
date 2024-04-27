@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>View Register</title>
+<title>Payment</title>
 <style>
     html, body {
         font-family: Arial, sans-serif;
@@ -54,6 +54,7 @@
         background-color: black;
         overflow: hidden;
         text-align: center;
+        height:130px;
     }
 
     .navbar a {
@@ -71,12 +72,35 @@
         margin-left: 20px;
         color: white;
     }
+    .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+        .navbar ul li {
+            margin-left: 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
 </style>
 </head>
 <body>
     <div class="navbar">
-        <h1>User Registration</h1>
-        <a href="adminhome.php"><u>Home</u></a>
+        <h1>Payment</h1>
+        <ul>
+          <li><a href="inner.php">Home</a></li>
+          <li><a href="notice.php">Notice</a></li>
+          <li><a href="complaints.php">Complaints</a></li>
+      </ul>
     </div>
     <table>
         <tr>
@@ -105,7 +129,11 @@
            
 
                     <?php
+<<<<<<< HEAD
                     echo "<td> <a href='payment2.php?id=" . $row['residentid'] . "'><button class='btn btn-danger'>Pay</button></a></td>";
+=======
+                   
+>>>>>>> 739d51d453168dd521c943b710a88b57a78d1e65
                     ?>
                   </tr>
                 <?php   } ?>

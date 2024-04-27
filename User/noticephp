@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notice</title>
     <style>
-        body {
-            background: linear-gradient(to top left, white 0%, #f35525 100%);
+        html, body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(to top left, white 0%, #f35525 100%);
+            height: 100%;
         }
         .container {
             width: 80%;
@@ -40,9 +41,11 @@
             background-color: rgb(114, 95, 95); /* Darker color on hover */
         }
         table {
-            width: 100%;
+            width: 1000px;
             border-collapse: collapse;
             margin-top: 20px;
+            margin-left: 70px;
+            margin: 55px auto;
         }
         th, td {
             border: 1px solid black;
@@ -72,12 +75,59 @@
         .btn-delete:hover {
             background-color: #5c302d;
         }
+        .navbar {
+        background-color: black; /* Changed to black */
+        overflow: hidden;
+        text-align: center; /* Center align the navbar content */
+    }
+    .navbar a {
+        display: inline-block; /* Make the link a block element to center it */
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 68px;
+        margin-right: 1000px;
+    }
+    .navbar h1 {
+        float: left;
+        margin-left: 20px;
+        color: white;
+    }
+    .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+        .navbar ul li {
+            margin-left: 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     
-    <div class="container">
-        <h1>Notice</h1>
+  <div class="navbar">
+    <h1>Notice</h1>
+    
+    
+    <ul>
+      <li><a href="inner.php">Home</a></li>
+      <li><a href="payment.php">Payments</a></li>
+      <li><a href="complaint.php">Complaints</a></li>
+  </ul>
+    
+</div>
         
         <table>
             <thead>
@@ -112,8 +162,7 @@
          
          
                              <?php
-                            //   echo "<td> <a href='updatenotice.php?id=" . $row['id'] . "'><button class='btn btn-warning'>Update</button></a></td>";
-                            //  echo "<td> <a href='deletenotice.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
+                            
                              ?>
                            </tr>
                          <?php   } ?>
@@ -121,9 +170,7 @@
            </table>
             <!-- End Default Table Example -->
             </div>
-                 </div>
-               </div>
-             </div>
+               
            </section>
              
          </body>

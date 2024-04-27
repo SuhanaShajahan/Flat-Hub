@@ -20,7 +20,7 @@ if(mysqli_query($con,$query2))
     $sql = mysqli_query($con,"SELECT * FROM tbl_electricity WHERE order_id = $residentid");
     while($row2 = mysqli_fetch_array($sql)){
         $residentid = $row2['residentid'];
-        $quantity = $row2['quantity'];
+        $month = $row2['month'];
         $sql4 = mysqli_query($con,"SELECT * FROM tbl_books WHERE book_id = $pid");
         $rowqty = mysqli_fetch_array($sql4);
         $newquantity = $rowqty['P_qnty'] + $quantity ;

@@ -41,10 +41,23 @@
     .back-to-home:hover {
         background-color: #e0e0e0; /* Light gray background on hover */
     }
+    .navbar {
+        background-color: black;
+        overflow: hidden;
+        text-align: center;
+        height:130px;
+    }
+    .navbar h1 {
+        float: left;
+        margin-left: 20px;
+        color: white;
+    }
 </style>
 </head>
 <body>
-
+    <div class="navbar">
+        <h1>Payment</h1>
+    </div>
 <div class="container">
     <h1>Payment Success</h1>
     <h3>Your last payment was successful</h3>
