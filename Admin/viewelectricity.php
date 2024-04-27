@@ -1,4 +1,3 @@
-
 <?php
 ?>
 <!DOCTYPE html>
@@ -85,8 +84,8 @@
             <th>Month</th>
             <th>Amount</th>
             <th>Payment Status</th>
-            <th>View</th>
-            <th> Action</th>
+            <th>Approve Bill</th>
+            <th> Refund</th>
             </tr><tbody>
        <?php include("config.php");
 
@@ -105,10 +104,10 @@
                     <td><?php echo $row['amount'] ?></td>
                     <td><?php echo $row['payment_sts'] ?></td>
                     <td>
-                            <a href="approveorder.php?oid=<?php echo $row['id'] ?>"><button class="remove-button">Approve</button></a>
+                            <a href="approveorder.php?residentid=<?php echo $row['id'] ?>"><button class="remove-button">Approve</button></a>
                         </td>
                         <td>
-                            <a href="approverefund.php?oid=<?php echo $row['id'] ?>"><button class="remove-button">Refund</button></a>
+                            <a href="approverefund.php?residentid=<?php echo $row['id'] ?>"><button class="remove-button">Refund</button></a>
                         </td>
                       
 

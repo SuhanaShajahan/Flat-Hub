@@ -213,16 +213,7 @@
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Electricity</span>
-                
-                <i class="mdi mdi-lightbulb menu-icon"></i>
-              </a>
-              <div class="collapse" id="ui-basic">
-               
-              </div>
-            </li>
+          
             <li class="nav-item">
               <a class="nav-link" href="viewreg.php">
                 <span class="menu-title">View Register</span>
@@ -235,14 +226,36 @@
                 <i class="mdi mdi-eye menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="notice_table.php">
-              
 
+            <li class="nav-item">
+              <a class="nav-link" href="addbill.php" >
+                <span class="menu-title">Electricity Bill</span>
+                
+                <i class="mdi mdi-lightbulb menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+               
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="viewelectricity.php" >
+                <span class="menu-title">View Bill</span>
+                
+                <i class="mdi mdi-lightbulb menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+               
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viewnotice.php">
                 <span class="menu-title">Notice</span>
                 <i class="mdi mdi-bell menu-icon"></i>
               </a>
             </li>
+
+
             <li class="nav-item">
               <a class="nav-link" href="viewcomplaint.php">
                 <span class="menu-title">View Complaints</span>
@@ -254,10 +267,7 @@
                 <span class="menu-title">View Contact</span>
                 
 
-                <i class="mdi mdi-eye menu-icon"></i>
-              </a><li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#" aria-expanded="false" aria-controls="general-pages">
-                  <span class="menu-title">View Notice</span>
+              
 
                   
                   <i class="mdi mdi-eye menu-icon"></i>

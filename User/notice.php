@@ -89,20 +89,88 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    
-                </tr>
-                <!-- Additional rows can be added here -->
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>
+                
+               
+                <?php include("config.php");
+         
+                         $query = "SELECT * FROM `tbl_notice`";
+                         $book = mysqli_query($con, $query);
+                         while ($row = mysqli_fetch_array($book)) {
+         
+         
+                         ?>
+         
+         
+                           <tr>
+                           <td><?php echo $row['id'] ?></td>
+                             <td><?php echo $row['notice_title'] ?></td>
+                             <td><?php echo $row['notice_content'] ?></td>
+                     
+                           
+                           
+         
+         
+         
+                             <?php
+                            //   echo "<td> <a href='updatenotice.php?id=" . $row['id'] . "'><button class='btn btn-warning'>Update</button></a></td>";
+                            //  echo "<td> <a href='deletenotice.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
+                             ?>
+                           </tr>
+                         <?php   } ?>
+                       </tbody>
+           </table>
+            <!-- End Default Table Example -->
+            </div>
+                 </div>
+               </div>
+             </div>
+           </section>
+             
+         </body>
+         </html>
+         
+           <script>
+             document.addEventListener("DOMContentLoaded", function() {
+               const searchInput = document.getElementById("user-search");
+               const userTableRows = document.querySelectorAll("table.table tbody tr");
+         
+               searchInput.addEventListener("input", function() {
+                 const query = searchInput.value.toLowerCase();
+         
+                 userTableRows.forEach((row) => {
+                   const name = row.querySelector("td:nth-child(1)").textContent.toLowerCase();
+                   const email = row.querySelector("td:nth-child(2)").textContent.toLowerCase();
+         
+                   if (name.includes(query) || email.includes(query)) {
+                     row.style.display = "table-row";
+                   } else {
+                     row.style.display = "none";
+                   }
+                 });
+               });
+             });
+           </script>
+         
+                                
+                            
+                           
+                              
+                              
+                              
+                              
+                                
+                              
+         
+                                
+                            
+                           
+                              
+                              
+                              
+                              
+                                
+                              
+         
+         
+                         <!-- Additional rows can be added here -->
+                   

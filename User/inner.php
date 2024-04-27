@@ -88,13 +88,26 @@
     <nav class="nav1">
         <div class="nav1div">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="contact.php">Contact Us</a></li>
                   <!-- <li><a href="property-details.html">Property Details</a></li> -->
-                  <li><button class="btn"><a href="#" class="active">LOGOUT</a></button></li>
+                  
                   <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
                 </ul>
-             
+                <div class="icon-container">
+                    <a href="#">
+                        <!-- <i class="fas fa-search icon"></i> -->
+                    </a>
+                    <?php
+                    if (isset($_SESSION['userid'])) {
+                    ?>
+                        <li><a href="#Blog"><?php echo $_SESSION['username'] ?></a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    <?php } else { ?>
+                        <a href="login.php">
+                            <i class="fas fa-user icon"></i>
+                        </a>
+                    <?php } ?>
                 <!-- ***** Menu End ***** -->
             
             </div>
@@ -105,9 +118,9 @@
                 <img src="icons8-authentication-48.png" alt="User Icon">
                 <p>Welcome, John Doe</p>
             </div>
-            <a href="notice.html">Notice</a>
-            <a href="complaint.html">Complaints</a>
-            <a href="payment.html">Payments</a>
+            <a href="notice.php">Notice</a>
+            <a href="complaint.php">Complaints</a>
+            <a href="payment.php">Payments</a>
         </div>
         <div class="content">
             <!-- Content area where you can add specific content for each section -->

@@ -57,14 +57,13 @@
   <!-- Admin Panel -->
   <div id="adminPanel">
    
-    <form id="noticeForm">
-      <label for="noticeTitle">Notice Title:</label>
-      <input type="text" id="noticeTitle" name="noticeTitle" required>
+    <form id="noticeForm" action="noticeact.php" method="POST">
+      <label for="notice_title">Notice Title:</label>
+      <input type="text" id="notice_title" name="notice_title" required>
       
-      <label for="noticeContent">Notice Content:</label>
-      <textarea id="noticeContent" name="noticeContent" rows="4" required></textarea>
-      
-      <button id="btn" type="submit">Add Notice</button>
+      <label for="notice_content">Notice Content:</label>
+      <textarea id="notice_content" name="notice_content" rows="4" required></textarea>
+      <input type="submit" value="Add Notice" name="submit">
     </form>
   </div>
 
