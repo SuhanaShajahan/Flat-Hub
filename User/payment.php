@@ -8,13 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Payment</title>
 <style>
-    html, body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(to top left, white 0%, #f35525 100%);
-        height: 100%;
-    }
+    
 
     h1 {
         text-align: center;
