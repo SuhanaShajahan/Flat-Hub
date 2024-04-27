@@ -1,6 +1,6 @@
 <?php
 include("config.php");
-$residentid = $_GET['residentid'];
+$residentid = $_GET['id'];
 
 
 
