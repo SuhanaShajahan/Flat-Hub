@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>View Register</title>
+<title>Payment history</title>
 <style>
     html, body {
         font-family: Arial, sans-serif;
@@ -53,6 +53,7 @@
         background-color: black;
         overflow: hidden;
         text-align: center;
+        height:130px;
     }
 
     .navbar a {
@@ -61,7 +62,7 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        margin-top: 68px;
+        margin-top: -38px;
         margin-right: 1000px;
     }
 
@@ -74,8 +75,8 @@
 </head>
 <body>
     <div class="navbar">
-        <h1>User Registration</h1>
-        <a href="adminhome.php"><u>Home</u></a>
+        <h1>Payment History</h1>
+        <a href="inner.php"><u>Home</u></a>
     </div>
     <table>
         <tr>
@@ -115,7 +116,7 @@
 
 
                     <?php
-                    // echo "<td> <a href='deletereg.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a></td>";
+                    
                     ?>
                   </tr>
                 <?php   } ?>
