@@ -81,7 +81,7 @@
     <table>
         <tr>
         <th> ID</th>
-            <th>Residents ID</th>
+   
             <th>Month</th>
             <th>Amount</th>
             <th>Payment Status</th>
@@ -100,15 +100,14 @@
 
                   <tr>
                   <td><?php echo $row['id'] ?></td>
-                    <td><?php echo $row['residentid'] ?></td>
                     <td><?php echo $row['month'] ?></td>
                     <td><?php echo $row['amount'] ?></td>
                     <td><?php echo $row['payment_sts'] ?></td>
                     <td>
-                            <a href="approveorder.php?oid=<?php echo $row['id'] ?>"><button class="remove-button">Approve</button></a>
+                            <a href="approveorder.php?id=<?php echo $row['id'] ?>"><button class="remove-button">Approve</button></a>
                         </td>
                         <td>
-                            <a href="approverefund.php?oid=<?php echo $row['id'] ?>"><button class="remove-button">Refund</button></a>
+                            <a href="approverefund.php?id=<?php echo $row['id'] ?>"><button class="remove-button">Refund</button></a>
                         </td>
                       
 

@@ -13,8 +13,7 @@
 <form action="addbillact.php" method="POST">
     
    
-    <label for="residentid">Resident ID </label>
-    <input type="text" id="residentid" name="residentid" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com$">
+
     <label for="month">Month:</label>
     <input type="type" id="month" name="month"  required>
     <label for="amount">Amount:</label>
