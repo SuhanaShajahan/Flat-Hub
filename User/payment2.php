@@ -49,10 +49,57 @@
     input[type="submit"]:hover {
         background-color: #1c521a; 
     }
-    
+    .navbar {
+        background-color: black;
+        overflow: hidden;
+        text-align: center;
+        height:130px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 68px;
+        margin-right: 1000px;
+    }
+
+    .navbar h1 {
+        float: left;
+        margin-left: 20px;
+        color: white;
+    }
+    .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+        .navbar ul li {
+            margin-left: 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
 </style>
 </head>
 <body>
+    <div class="navbar">
+        <h1>Payment</h1>
+        <ul>
+          <li><a href="payment.php">Home</a></li>
+          
+      </ul>
+    </div>
 <h2 style="margin-top:40px;"><center>Debit-Card Payment</center></h2>
 <div class="form-container">
     <form>
