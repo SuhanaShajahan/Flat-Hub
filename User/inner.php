@@ -89,7 +89,7 @@
         <div class="nav1div">
             
                 <ul>
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.php">Home</a></li>
                   <li><a href="logout.php" class="logout-btn">Logout</a></li>
                   <!-- <li><a href="property-details.html">Property Details</a></li> -->
                   
@@ -106,16 +106,13 @@
                 
                 
             </div>
-<<<<<<< HEAD
+
             <a href="notice.php">Notice</a>
             <a href="complaint.php">Complaints</a>
             <a href="payment.php">Payments</a>
             <a href="payment3.php">Payment History</a>
-=======
-            <a href="notice.html">Notice</a>
-            <a href="complaint.html">Complaints</a>
-            <a href="payment.html">Payments</a>
->>>>>>> 739d51d453168dd521c943b710a88b57a78d1e65
+
+           
         </div>
         <div class="content">
             <!-- Content area where you can add specific content for each section -->

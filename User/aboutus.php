@@ -77,9 +77,9 @@ https://templatemo.com/tm-591-villa-agency
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="appartment.html" class="active">Appartments</a></li>
+                        <li><a href="index.php" class="active">Home</a></li>
+                        <li><a href="aboutus.php">About Us</a></li>
+                        <li><a href="appartment.php" class="active">Appartments</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>

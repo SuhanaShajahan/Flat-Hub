@@ -1,0 +1,15 @@
+<?php
+include("config.php");
+
+if(isset($_GET['id'])){
+$id=$_GET['id'];
+}
+$query="select * from `tbl_notice` where `id`='$id'";
+$result=mysqli_query($con,$query);
+if(!$result){
+   die("querry failed".mysqli_error());
+}else{
+    $row=mysqli_fetch_assoc($result);
+   
+
+    }?>

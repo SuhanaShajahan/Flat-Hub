@@ -105,15 +105,15 @@ https://templatemo.com/tm-591-villa-agency
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <h1>FlatHub</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="appartment.html">Appartments</a></li>
-                      <li><a href="booking.html" class="active">Bookings</a></li>
+                      <li><a href="index.php">Home</a></li>
+                      <li><a href="appartment.php">Appartments</a></li>
+                      <li><a href="booking.php" class="active">Bookings</a></li>
                       <!-- <li><a href="contact.html">Contact Us</a></li> -->
                   </ul>   
                     <a class='menu-trigger'>

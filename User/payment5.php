@@ -106,8 +106,8 @@
 <div class="form-container">
     <form action="success.php" method="POST">
         <div class="form-group">
-            <label for="amount">Total Amount:</label>
-            <input type="text" id="price" name="amount" readonly value=" <?php echo $row['amount'] ?> ">
+            <label for="payment-method">Total Amount:</label>
+            <input type="text" id="price" name="totalprice" readonly value="<?php echo $rowprice['totalprice'] ?>">
         </div>
         <div class="form-group">
             <label for="cardNumber">Card Number:</label>
@@ -126,7 +126,7 @@
             <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
         </div>
         <div class="form-group">
-            <input type="submit" value="Proceed to Payment">
+        <input type="submit" value="Proceed to pay" name="submit">
         </div>
         <?php include("config.php");
 
@@ -140,8 +140,7 @@ while ($row = mysqli_fetch_array($book)) {
 
   <tr>
 
-    <td><?php echo $row['amount'] ?></td>
-    
+   
     
       
 

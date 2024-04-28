@@ -57,12 +57,12 @@
   <!-- Admin Panel -->
   <div id="adminPanel">
    
-    <form id="noticeForm" action="noticeact.php" method="POST">
+    <form id="noticeForm" action="noticeact.php" method="POST" >
       <label for="notice_title">Notice Title:</label>
-      <input type="text" id="notice_title" name="notice_title" required>
+      <input type="text" id="notice_title" name="notice_title" required >
       
       <label for="notice_content">Notice Content:</label>
-      <textarea id="notice_content" name="notice_content" rows="4" required></textarea>
+      <textarea id="notice_content" name="notice_content" rows="4" required ></textarea>
       <input type="submit" value="Add Notice" name="submit">
     </form>
   </div>

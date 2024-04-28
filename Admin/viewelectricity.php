@@ -83,10 +83,10 @@
         <th> Resident ID</th>
             <th>Month</th>
             <th>Amount</th>
-            <th>Bill Status</th>
+            <!-- <th>Bill Status</th>
             <th>Payment Status</th>
             <th>Approve Bill</th>
-            <th> Refund</th>
+            <th> Refund</th> -->
             </tr><tbody>
        <?php include("config.php");
 
@@ -103,7 +103,7 @@
                   <td><?php echo $row['residentid'] ?></td>
                     <td><?php echo $row['month'] ?></td>
                     <td><?php echo $row['amount'] ?></td>
-                    <td><?php echo $row['bill_sts'] ?></td>
+                    <!-- <td><?php echo $row['bill_sts'] ?></td>
                     <td><?php echo $row['payment_sts'] ?></td>
                     <td>
                             <a href="approvebill.php?id=<?php echo $row['residentid'] ?>"><button class="remove-button">Approve</button></a>
@@ -111,7 +111,7 @@
                         <td>
                             <a href="approverefundbill.php?id=<?php echo $row['residentid'] ?>"><button class="remove-button">Refund</button></a>
                         </td>
-                      
+                       -->
 
 
                     <?php

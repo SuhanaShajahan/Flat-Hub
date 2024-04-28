@@ -1,4 +1,3 @@
-
 <?php
 ?>
 <!DOCTYPE html>
@@ -126,14 +125,16 @@
                   <td><?php echo $row['residentid'] ?></td>
                     <td><?php echo $row['month'] ?></td>
                     <td><?php echo $row['amount'] ?></td>
-           
+    
+    
+                    
 
                     <?php
-<<<<<<< HEAD
-                    echo "<td> <a href='payment2.php?id=" . $row['residentid'] . "'><button class='btn btn-danger'>Pay</button></a></td>";
-=======
+
+                    echo "<td> <a href='checkout.php?id=" . $row['residentid'] . "'><button class='btn btn-danger'>Pay</button></a></td>";
+
                    
->>>>>>> 739d51d453168dd521c943b710a88b57a78d1e65
+
                     ?>
                   </tr>
                 <?php   } ?>

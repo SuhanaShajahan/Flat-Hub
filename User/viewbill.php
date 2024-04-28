@@ -1,10 +1,9 @@
 <?php
-include("header.php");
 include("config.php");
-$user_id = $_SESSION['userid'];
-$order_id = $_GET['oid'];
+$residentid = $_GET['residentid'];
 
-$sql = mysqli_query($con, "SELECT * FROM tbl_order WHERE id = $order_id ");
+
+$sql = mysqli_query($con, "SELECT * FROM tbl_electricity WHERE id = $residentid ");
 $row = mysqli_fetch_array($sql);
 
 ?>
@@ -64,40 +63,27 @@ $row = mysqli_fetch_array($sql);
 
 
 <section class="a1">
-    <h1>Order ID: <?php echo $row['id'] ?></h1><br><br>
+    <h1>Resident ID: <?php echo $row['residentid'] ?></h1><br><br>
 
+    <?php
 
-    <div class="container">
-        <div class="details">
-            <div class="a5">
-                <?php $sql2 = mysqli_query($con, "SELECT * FROM tbl_orderitems WHERE order_id = $order_id ");
-                while ($rows = mysqli_fetch_array($sql2)) {
-                    $sql3 = mysqli_query($con, "SELECT * FROM tbl_books WHERE book_id = {$rows['p_id']}");
-                    $pro = mysqli_fetch_array($sql3); ?>
-                    <div class="product">
-                        <div class="flex">
-                            <img src="../Admin/img/Bookimg/<?php echo $pro['image']; ?>" alt="Image">
-                        </div>
-                        <div class="flex2">
-                            <div>Product Name: <?php echo $pro['book_name']; ?> </div>
-                            <div>Quantity: <?php echo $rows['quantity']; ?></div>
-                            <div>Price: <?php echo $rows['price']; ?></div>
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
+    $query = "SELECT * FROM `tbl_electricity`";
+                $book = mysqli_query($con, $query);
+                while ($row = mysqli_fetch_array($book)) 
+              
+                
+                ?>
+
 
             <div class="other">
-                <div>Name: &nbsp; <?php echo $row['name']; ?> </div>
-                <div>Email:&nbsp; <?php echo $row['email']; ?> </div>
-                <div>Phone: &nbsp; <?php echo $row['phone']; ?> </div>
-                <div>Address:&nbsp; <?php echo $row['address']; ?> </div>
-                <div>Pincode: &nbsp; <?php echo $row['pincode']; ?> </div>
+                <div>ID: &nbsp; <?php echo $row['residentid']; ?> </div>
+                <div>month:&nbsp; <?php echo $row['month']; ?> </div>
+                <div>amount: &nbsp; <?php echo $row['amount']; ?> </div>
                 <br>
-                <div>Order Status:&nbsp; <?php echo $row['order_status']; ?> </div>
-                <div>Payment Status: &nbsp; <?php echo $row['payment_status']; ?> </div>
+                <div>Order Status:&nbsp; <?php echo $row['bill_sts']; ?> </div>
+                <div>Payment Status: &nbsp; <?php echo $row['payment_sts']; ?> </div>
                 <br>
-                <div>Total Price: &nbsp; <?php echo $row['price']; ?> </div>
+                
 
             </div>
         </div>

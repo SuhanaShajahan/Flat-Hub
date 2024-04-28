@@ -79,10 +79,10 @@ https://templatemo.com/tm-591-villa-agency
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="appartment.html">Appartment</a></li>
+                      <li><a href="index.php">Home</a></li>
+                      <li><a href="appartment.php">Appartment</a></li>
                       <!-- <li><a href="property-details.html">Property Details</a></li> -->
-                      <li><a href="contact.html" class="active">Contact Us</a></li>
+                      <li><a href="contact.php" class="active">Contact Us</a></li>
                       <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
                   </ul>   
                     <a class='menu-trigger'>
