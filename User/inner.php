@@ -112,7 +112,11 @@
             <a href="payment.php">Payments</a>
             <a href="payment3.php">Payment History</a>
 
+<<<<<<< HEAD
            
+=======
+        
+>>>>>>> 1d518568ac004685ac66402a2410bf35da55d92e
         </div>
         <div class="content">
             <!-- Content area where you can add specific content for each section -->
