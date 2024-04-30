@@ -74,7 +74,7 @@ https://templatemo.com/tm-591-villa-agency
                   <!-- ***** Logo Start ***** --> <ul class="info">
           <li><i class="fa fa-buildings"></i> </li>
                   </ul>
-                  <a href="index.html" class="logo">
+                  <a href="index.php" class="logo">
                    <div> <i class=""></i></div>
                     
                       <h1>FlatHub</h1>
